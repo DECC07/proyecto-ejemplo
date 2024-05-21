@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Agencia de Viaje</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<h1>ConoceBO</h1>
+    <br>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MENU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="hospedaje.html">Hospedaje</a>
+            <a class="nav-link" href="vuelo.html">Vuelos</a>
+            <a class="nav-link" href="lugares.html">Lugares</a>
+            <a class="nav-link" href="resgistro.html">Registro</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Ofertas</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Familiares</a></li>
+              <li><a class="dropdown-item" href="#">Pareja</a></li>
+              <li><a class="dropdown-item" href="#">Aniversarios</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Turista</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Idiomas</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li><a class="dropdown-item" href="#">Ingles</a></li>
+              <li><a class="dropdown-item" href="#">Frances</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Chino</a></li>
+            </ul>
+          </li>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <h2> FORMULARIO DE REGISTRO</h2>
+  <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">Nombre</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" minlength="3" maxlength="20" required>
+          <!--
+            <div class="valid-feedback" >
+            Excelente!
+          </div>
+        -->
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Apellido</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" minlength="3" maxlength="20" required>
+          <!--
+          <div class="valid-feedback">
+            Excelente!
+          </div>
+        -->
+        </div>
+        <div class="col-mb-4">
+          <label for="validationServer03" class="form-label">Correo Electronico</label>
+          <input type="email" class="form-control is-valid" id="validationServer04" aria-describedby="validationServer03Feedback" placeholder="name@example.com" required>
+          <!--
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Looks good!
+          </div>
+        -->
+        </div>
+        <div class="col-md-6">
+          <label for="validationServer04" class="form-label">Pais</label>
+          <input type="text" class="form-control is-invalid" id="validationServer04" aria-describedby="validationServer03Feedback" required>
+          <!--
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        -->
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer04" class="form-label">Ubicación Actual</label>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Elija su ubicación</option>
+            <option>La Paz</option>
+            <option>Oruro</option>
+            <option>Potosi</option>
+            <option>Cochabamba</option>
+            <option>Chuquisica</option>
+            <option>Tarija</option>
+            <option>Pando</option>
+            <option>Beni</option>
+            <option>Santa Cruz</option>
+          </select>
+          <!--
+            <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        -->
+        </div>
+        
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Acepto Términos y Condiciones
+            </label>
+            <!--
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+              Usted esta de acuerdo 
+            </div>
+          -->
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+      </nav>
+
+  </body>
+</html>
